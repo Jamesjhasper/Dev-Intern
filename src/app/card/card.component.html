@@ -1,0 +1,12 @@
+<div class="card-container">
+  <div class="card">
+    <img [src]='immag' alt="kofi group">
+    <h3>{{channelContent}}</h3>
+    <p>{{channelName}}</p>
+  </div>
+</div>
+
+<input type="number" [(ngModel)]="num1" /> + 
+<input type="number" [(ngModel)]="num2"/>
+<button (click)="addTwoNumbers(num1, num2)">Add</button>
+<p>The answer is : {{ result }}</p>

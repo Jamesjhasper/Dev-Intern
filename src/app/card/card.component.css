@@ -1,0 +1,14 @@
+.card-container{
+  border: 2px solid #d5294d;
+  margin: 0.1rem 5rem 2rem 2rem;
+  width: 10rem;
+  height: 42vh;
+}
+h3{
+  font-size: 20px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
