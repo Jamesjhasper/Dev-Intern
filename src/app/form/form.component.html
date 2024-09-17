@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="row mt-5 justify-content-center"></div>
+ <div class="col-8 bg-light border shadow-lg">
+    <form (ngSubmit)="submitInfo()" #userForm ='ngForm'>
+
+    <!-- Name -->
+    <div>
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)] ="userRegistrationForm.name" class="form-control">
+    </div>
+
+    <!-- Email -->
+    <div>
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)] ="userRegistrationForm.email" class="form-control">
+  </div>
+
+  <!-- Password -->
+  <div>
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)] ="userRegistrationForm.password" class="form-control">
+  </div>
+
+  <!-- Confirm Password -->
+  <div>
+    <label for="confirmpassword"class="form-label">Confirm Password:</label>
+    <input type="confirmPassword" id="confirmPassword" name="confirmPassword" [(ngModel)] ="userRegistrationForm.confirmPassword" class="form-control">
+  </div>
+
+  <!-- Date of Birth -->
+  <div>
+    <label for="DOB" class="form-label">Date Of Birth:</label>
+    <input type="date" id="DOB" name="DOB" [(ngModel)] ="userRegistrationForm.DOB" class="form-control">
+  </div>
+
+  <!-- age -->
+  <div>
+    <label for="age" class="form-label">Age:</label>
+    <input type="age" id="age" name="age" [(ngModel)] ="userRegistrationForm.age" class="form-control">
+  </div>
+
+  <!-- Phone Number -->
+  <div>
+    <label for="Phone Number" class="form-label">Phone Number</label>
+    <input type="text" id="number" name="number" [(ngModel)] ="userRegistrationForm.number" class="form-control">
+  </div>
+
+  <!-- Gender -->
+  <div>
+    <label for="maleOrFemale" class="form-label">Gender</label>
+
+    <label class="form-label">Male<input type="radio" id="maleOrFemale" name="maleOrFemale" [(ngModel)] ="userRegistrationForm.maleOrFemale" class="form-check-input"></label>
+    <label class="form-label">Female<input type="radio" id="maleOrFemale" name="maleOrFemale" [(ngModel)] ="userRegistrationForm.maleOrFemale" class="form-check-input"></label>
+  </div>
+
+  <!-- Reason For registering -->
+  <div>
+    <label for="reasonForRegistering" class="form-label">Reasons for registering</label>
+    <textarea id="reasonForRegistering" name="reasonForRegistering" [(ngModel)] ="userRegistrationForm.reasonForRegistering" class="form-control"></textarea>
+  </div>
+
+
+  <!-- submit -->
+   
+    <button type="submit" [disabled]="!userForm.form.controls['name'].untouched" class="btn btn-primary float-end m">Send</button>
+    </form>
+ </div>
+<div>
+
+<!-- < class="text-muted">bootstrap-working</ -->

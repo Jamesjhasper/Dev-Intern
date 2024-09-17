@@ -4,13 +4,17 @@ import { RouterOutlet } from '@angular/router';
 import { FirstComponent } from './first-component/first-component.component';
 import { CardComponent } from './card/card.component';
 import {FormsModule} from '@angular/forms';
+import { TextComponent } from "./text/text.component";
+import { FormComponent } from "./form/form.component";
+import { ReactiveFormComponent } from "./reactive-form/reactive-form.component";
+import { CalculatorComponent } from "./calculator/calculator.component";
 
 //creating interface for dummyData.
 interface dummyData {
   title: string;
   content: string;
   image: string;
-  
+
 }
 
 type channelData ={
@@ -21,7 +25,7 @@ type channelData ={
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule,FirstComponent,CardComponent,FormsModule],
+  imports: [RouterOutlet, CommonModule, FirstComponent, CardComponent, FormsModule, TextComponent, FormComponent, ReactiveFormComponent, CalculatorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
